@@ -24,7 +24,7 @@ body
     padding: 0;
 }
 
-.center 
+/*.center 
 {
     animation: fadeIn 1.75s;
     animation-delay: 0.5s;
@@ -33,4 +33,4 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;  
-}
+}*/
