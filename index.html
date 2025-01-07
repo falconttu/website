@@ -3,39 +3,34 @@
   <link
     rel="stylesheet"
     type="text/css"
-    href="stylesheet.css?version=0.002"
+    href="stylesheet.css?version=0.003"
     media="screen"
   />
 
-  <link rel="icon" type="img" href="resources\Logo\TR.png" />
+  <link rel="icon" type="image/x-icon" href="resources\Logo\TR.ico" />
+
   <head>
     <title>Thejaswin Raghunandhan</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script>
+      async function loadComponent(selector, url) {
+        const response = await fetch(url);
+        const html = await response.text();
+        document.querySelector(selector).innerHTML = html;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        loadComponent(".header-container", "components/header.html");
+        loadComponent(".footer-container", "components/footer.html");
+      });
+    </script>
   </head>
 
   <body>
-    <div class="header">
-      <a href="index.html">
-        <img
-          class="logo-img"
-          src="resources\Logo\TR.png"
-          alt="Logo"
-          width="60"
-          height="44"
-        />
-      </a>
-      <div class="header_links">
-        <ul class="nav-links">
-          <li><a href="#games">Games</a></li>
-          <li><a href="#renders">Renders</a></li>
-          <li><a href="#blogs">Blogs</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+    <div class="header-container"></div>
     <div class="landing_page">Landing Page stuff</div>
-    <div class="footer">Footer stuff</div>
+    <div class="footer-container"></div>
   </body>
 </html>
