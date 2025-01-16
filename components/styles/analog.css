@@ -82,3 +82,8 @@ body {
 .button-links hr {
   margin: 0;
 }
+
+.tr {
+  justify-content: center;
+  margin: auto;
+}
