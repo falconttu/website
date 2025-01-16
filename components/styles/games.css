@@ -1,0 +1,57 @@
+::backdrop {
+  background-color: #fffbfe;
+}
+
+body {
+  display: flex;
+  background-color: #fffbfe;
+  color: #080705;
+  font-family: "Prompt", sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.games {
+  margin: 5;
+  padding: 5;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 2vw;
+  text-align: center;
+  position: relative;
+}
+
+.table {
+  position: relative;
+}
+
+.analog-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: relative;
+  border-radius: 2.5%;
+}
+
+.analog-text {
+  text-align: center;
+  font-size: 4vw;
+}
+
+.table a {
+  text-decoration: none;
+  color: #080705;
+  font-weight: 500;
+  transition: color 0.35s ease;
+}
+
+.table a:hover {
+  color: #f13030;
+}
