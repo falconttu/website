@@ -1,0 +1,84 @@
+:backdrop {
+  background-color: #fffbfe;
+}
+
+body {
+  display: flex;
+  background-color: #fffbfe;
+  color: #080705;
+  font-family: "Prompt", sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.analog {
+  margin: 5;
+  padding: 5;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3vw;
+}
+
+.scroll {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+  max-height: 50vh;
+}
+
+.first-text {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: center;
+}
+
+.next-text {
+  text-align: center;
+}
+
+.buttons {
+  flex: auto;
+  padding: 6px 6px;
+  font-weight: bold;
+}
+
+.button-links {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.button-links li {
+  margin: 0 10px;
+}
+
+.button-links a {
+  text-decoration: none;
+  color: #080705;
+  font-weight: 500;
+  transition: color 0.35s ease;
+}
+
+.button-links a:hover {
+  color: #f13030;
+}
+
+.button-links hr {
+  margin: 0;
+}

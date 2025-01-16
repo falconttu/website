@@ -1,0 +1,44 @@
+:backdrop {
+  background-color: #fffbfe;
+}
+
+body {
+  display: flex;
+  background-color: #fffbfe;
+  color: #080705;
+  font-family: "Prompt", sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.blogs {
+  margin: 5;
+  padding: 5;
+  margin-bottom: auto;
+}
+
+.title {
+  font-size: 4vw;
+  text-align: center;
+}
+
+.analog-title {
+  font-size: 1.5vw;
+}
+
+.entry {
+  padding: 5;
+}
+
+.entry-date {
+  font-size: large;
+}
+
+.entry-text {
+  padding-top: 1px;
+  font-size: medium;
+  text-align: left;
+  padding-right: 50%;
+}
