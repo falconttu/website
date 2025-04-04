@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="components/styles/analog.css?version=0.005"
+    media="screen"
+  />
+
+  <link rel="icon" type="image/x-icon" href="resources\Logo\TR.ico" />
+
+  <head>
+    <title>Thejaswin Raghunandhan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script>
+      async function loadComponent(selector, url) {
+        const response = await fetch(url);
+        const html = await response.text();
+        document.querySelector(selector).innerHTML = html;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        loadComponent(".header-container", "components/header.html");
+        loadComponent(".footer-container", "components/footer.html");
+      });
+    </script>
+  </head>
+</html>
+<body>
+  <div class="header-container"></div>
+  <div class="analog">
+    <div class="title"><b>Analog Host</b></div>
+    <div class="scroll">
+      <img src="resources/adscreen1.png" alt="ad1" />
+      <img src="resources/adscreen2.png" alt="ad1" />
+      <img src="resources/adscreen3.png" alt="ad3" />
+      <img src="resources/adscreen4.png" alt="ad4" />
+      <img src="resources/adscreen5.png" alt="ad5" />
+    </div>
+    <div class="first-text">
+      Analog Host is a single-player game that draws heavy inspiration from the
+      <i>Five Nights at Freddy</i> franchise.
+    </div>
+    <br />
+    <div class="next-text">
+      <b>
+        This game was made in a team of 4, with me included. We made the game
+        with Unity 6.</b
+      >
+    </div>
+    <table>
+      <tr>
+        <td>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/oFqvT9mA2Zw?si=VFuAY-79qkVv4-3T"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </td>
+      </tr>
+    </table>
+
+    <div class="buttons">
+      <ul class="button-links">
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1AxV2MQTV0sV9yrI2Al2dSRnK8rN0clk2?usp=sharing"
+            >Click here to Download the game!</a
+          >
+        </li>
+        <hr />
+        <li><a href="blogs.html">Click here to view the progress blog!</a></li>
+        <hr />
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1AxV2MQTV0sV9yrI2Al2dSRnK8rN0clk2?usp=sharing"
+            >Click here to view the Design Document!</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-container"></div>
+</body>
