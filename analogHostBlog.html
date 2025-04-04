@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="components/styles/blogs.css?version=0.007"
+    media="screen"
+  />
+
+  <link rel="icon" type="image/x-icon" href="resources\Logo\TR.ico" />
+
+  <head>
+    <title>Thejaswin Raghunandhan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script>
+      async function loadComponent(selector, url) {
+        const response = await fetch(url);
+        const html = await response.text();
+        document.querySelector(selector).innerHTML = html;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        loadComponent(".header-container", "components/header.html");
+        loadComponent(".footer-container", "components/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header-container"></div>
+    <div class="blogs">
+      <div class="blog-header">
+        <div class="title">Analog Host Blog</div>
+        <a href="blogs.html" class="back-link">← Back to All Blogs</a>
+      </div>
+
+      <div class="blog">
+        <div class="entry">
+          <div class="entry-date">
+            <i>Monday, 27<sup>th</sup> January 2025</i>
+            <div class="entry-text">
+              Currently sitting in a lecture regarding the use of generative AI
+              for writing a compelling narrative for games. Half of my team is
+              not present for this week’s lecture, hence I took this opportunity
+              to talk to my lecturer
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="entry">
+          <div class="entry-date">
+            <i>Monday, 20<sup>th</sup> January 2025</i>
+            <div class="entry-text">
+              New project! Attended a lecture regarding narrative writing which
+              could be helpful for the project in the long run. After the
+              lecture my team meet up and decided on staying together as group
+              1. So far, we’ve come up with ideas on developing the lore for the
+              demo, and wire framed a basic cast. We’ve also decided on using
+              Unreal Engine for development.
+            </div>
+          </div>
+        </div>
+        <!-- Additional entries follow the same pattern -->
+      </div>
+    </div>
+    <div class="footer-container"></div>
+  </body>
+</html>
