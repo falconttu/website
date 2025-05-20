@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 }
 
-.analog {
+.content {
   margin: 5;
   padding: 5;
   margin-top: auto;
@@ -36,6 +36,12 @@ body {
   justify-content: center;
   overflow: auto;
   max-height: 50vh;
+}
+
+.scroll img {
+  max-height: 720px;
+  width: auto;
+  max-width: 100%;
 }
 
 .first-text {

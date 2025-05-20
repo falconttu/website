@@ -36,7 +36,7 @@ body {
   justify-content: center;
 }
 
-.analog-img {
+.table-content-img {
   width: 100%;
   height: auto;
   margin: auto;
@@ -44,7 +44,7 @@ body {
   border-radius: 2.5%;
 }
 
-.analog-text {
+.table-content-text {
   text-align: center;
   font-size: 4vw;
 }
